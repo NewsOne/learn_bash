@@ -1,0 +1,7 @@
+read -n1 -p "Do that? [server, client, escape]" doit
+case $doit in
+ s|S) . ~/bashscripts/server.sh ;;
+ c|C) . ~/bashscripts/client.sh ;;
+ e|E) clear ;;
+esac
+
